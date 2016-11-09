@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/icon_book"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/my_booking"/>
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/icon_book"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/kotaManag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solo, Central Java"/>
+        <TextView
+            android:id="@+id/tanggalManag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Sept 2016"/>
+        <TextView
+            android:id="@+id/jumlahManag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 5.000.000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttom"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textDeposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip is finished"
+            android:textColor="@color/green"/>
+
+    <Button
+
+
+        android:id="@+id/buttonManag"
+
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:text="Transfer to My Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.macmini2.triponyu.MyBookingFragment">
+
+
+<RelativeLayout
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/myBook1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/place"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+       <ImageView
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:src="@drawable/my_booking"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner Nasi Liwet"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/region"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solo, Middle of Java" />
+
+    <TextView
+        android:id="@+id/time_pick"
+
+        android:layout_below="@id/region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16 Sept 2016" />
+    <TextView
+        android:layout_below="@id/time_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Issued"
+        android:textColor="@android:color/holo_red_dark"/>
+</RelativeLayout>
+    <View
+
+        android:id="@+id/divider1"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/myBook1"></View>
+<RelativeLayout
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/myBook2"
+    android:layout_below="@id/divider1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:id="@+id/detail"
+        android:layout_below="@id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background_navy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Read More"/>
+
+    <TextView
+
+        android:id="@+id/description"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+    <View
+        android:id="@+id/divider2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/myBook2"></View>
+    <RelativeLayout
+        android:id="@+id/myBook3"
+        android:layout_below="@id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp">
+    <TextView
+
+        android:id="@+id/rate"
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Tripers"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/rating"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_photo"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+
+        android:text="Shinta Rahmawati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:progressTint="@android:color/holo_red_light"
+                android:progressBackgroundTint="@android:color/holo_red_light"
+                android:stepSize="0.5"
+                android:rating="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:layout_below="@id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:background="@color/grey"
+            android:hint="Please write some review for my trip.\nThank you"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@id/myBook3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Rate Trip"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@color/orange"/>
+
+
+</RelativeLayout>
+</ScrollView>

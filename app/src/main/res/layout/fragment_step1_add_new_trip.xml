@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.macmini2.triponyu.Step1AddNewTripFragment">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_photo" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Hi, Joseph"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/name"
+            android:padding="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Trip Category"/>
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/name"
+            android:padding="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"/>
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/name"
+            android:padding="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Maks Person"/>
+
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/name"
+            android:padding="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration Trip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Next"
+
+            android:textColor="@android:color/white"
+            android:background="@color/orange"/>
+    </LinearLayout>
+
+
+</LinearLayout>

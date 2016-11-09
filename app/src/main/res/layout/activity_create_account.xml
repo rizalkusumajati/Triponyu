@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.example.macmini2.triponyu.CreateAccountActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="Join with us"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+
+            android:text="Get the special local experience"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center">
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:hint="Your Email"
+            android:backgroundTint="@android:color/white"
+
+            />
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:hint="First Name"
+            android:backgroundTint="@android:color/white"
+            />
+
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:hint="Last Name"
+            android:backgroundTint="@android:color/white"
+            />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:hint="Password"
+            android:backgroundTint="@android:color/white"
+            />
+
+        <EditText
+            android:id="@+id/et_repeat_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:hint="Repeat Password"
+            android:backgroundTint="@android:color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Register"
+            android:textAllCaps="false"
+
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background_orange"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

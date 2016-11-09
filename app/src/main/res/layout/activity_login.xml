@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.macmini2.triponyu.LoginActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back Tripper!"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Get the special local experience"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="5dp"
+            android:hint="Your Email"
+            android:backgroundTint="@android:color/white"
+
+            />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="20dp"
+
+            android:hint="Password"
+            android:backgroundTint="@android:color/white"
+            />
+        <Button
+            android:id="@+id/buttonLogIn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background_orange"/>
+    </LinearLayout>
+</RelativeLayout>

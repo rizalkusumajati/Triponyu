@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp">
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Input your bank account"/>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/takePic"
+
+            android:layout_centerVertical="true"
+            android:background="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="Take a picture your bank acc"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/picture"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginRight="50dp"
+       android:padding="5dp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+
+        android:hint="Name of Bank"/>
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+
+        android:hint="Name of Account Bank"/>
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+
+        android:hint="Number Account Bank"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/orange"
+        android:text="Next"
+        android:layout_gravity="end"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"/>
+</LinearLayout>

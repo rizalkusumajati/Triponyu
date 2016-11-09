@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background_navy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Read More"
+        android:id="@+id/button" />
+</LinearLayout>
