@@ -626,7 +626,7 @@
                     android:layout_marginTop="10sp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/onny"
+                    android:src="@drawable/background"
 
                     android:id="@+id/poto"
                     android:layout_alignParentTop="true"
@@ -732,7 +732,7 @@
                     android:layout_marginTop="10sp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/onny"
+                    android:src="@drawable/background"
 
                     android:id="@+id/poto2"
                     android:layout_alignParentTop="true"
@@ -845,7 +845,7 @@
                     android:layout_marginTop="10sp"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/onny"
+                    android:src="@drawable/background"
                     android:layout_below="@+id/local"
                     android:id="@+id/poto3"
                     android:layout_centerHorizontal="true" />
