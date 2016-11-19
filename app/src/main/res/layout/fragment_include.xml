@@ -4,11 +4,235 @@
     android:layout_height="match_parent"
     tools:context="com.example.macmini2.triponyu.IncludeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Include Fragment" />
+        android:id="@+id/isiinclude"
+        android:hint="Include"
+        android:layout_marginTop="10sp"
+
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_below="@+id/isiinclude"
+        android:textColor="@android:color/white"
+        android:background="@color/orange"
+        android:id="@+id/tombolinclude"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/tombolinclude"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+
+            >
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snack"
+
+                android:textSize="20sp"
+                android:id="@+id/katainclude"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis"
+                android:layout_below="@+id/katainclude"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garis"
+                android:textSize="20sp"
+                android:id="@+id/katainclude2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus2"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis2"
+                android:layout_below="@+id/katainclude2"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garis2"
+                android:textSize="20sp"
+                android:id="@+id/katainclude3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus3"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis3"
+                android:layout_below="@+id/katainclude3"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garis3"
+                android:textSize="20sp"
+                android:id="@+id/katainclude4"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus4"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis4"
+                android:layout_below="@+id/katainclude4"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garis4"
+                android:textSize="20sp"
+                android:id="@+id/katainclude5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus5"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis5"
+                android:layout_below="@+id/katainclude5"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garis5"
+                android:textSize="20sp"
+                android:id="@+id/katainclude6"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus6"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude6"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis6"
+                android:layout_below="@+id/katainclude6"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garis5"
+                android:textSize="20sp"
+                android:id="@+id/katainclude7"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapus7"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/katainclude7"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garis7"
+                android:layout_below="@+id/katainclude7"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

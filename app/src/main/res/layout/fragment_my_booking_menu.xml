@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.macmini2.triponyu.MyBookingMenuFragment">
+    tools:context="com.example.macmini2.triponyu.myBooking.MyBookingMenuFragment">
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@color/orange">
+       >
         <LinearLayout
             android:id="@+id/tabActive"
             android:layout_weight="1"
@@ -44,20 +44,20 @@
             android:layout_height="wrap_content">
         <TextView
 
-            android:padding="10dp"
+            android:padding="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Active Booking"
+            android:text="ACTIVE BOOKING"
 
 
-            android:textColor="@android:color/white"
+
             />
             <View
                 android:id="@+id/underlineActive"
                 android:layout_marginBottom="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/white"></View>
+                android:background="@color/orange"></View>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tabHistory"
@@ -68,18 +68,18 @@
             android:layout_height="wrap_content">
         <TextView
 
-            android:padding="10dp"
-            android:textColor="@android:color/white"
+            android:padding="20dp"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="History Booking"/>
+            android:text="HISTORY BOOKING"/>
             <View
                 android:id="@+id/underlineHistory"
                 android:visibility="gone"
                 android:layout_marginBottom="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@android:color/white"></View>
+                android:background="@color/orange"></View>
 </LinearLayout>
     </LinearLayout>
 

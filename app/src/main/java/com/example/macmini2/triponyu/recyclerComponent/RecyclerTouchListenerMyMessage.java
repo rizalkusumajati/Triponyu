@@ -6,8 +6,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.example.macmini2.triponyu.MyMessageFragment;
-import com.example.macmini2.triponyu.YourTripFragment;
+import com.example.macmini2.triponyu.message.MyMessageFragment;
 
 /**
  * Created by macmini2 on 9/26/16.

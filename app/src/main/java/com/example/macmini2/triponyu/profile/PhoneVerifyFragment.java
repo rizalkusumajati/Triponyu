@@ -1,4 +1,4 @@
-package com.example.macmini2.triponyu;
+package com.example.macmini2.triponyu.profile;
 
 
 import android.os.Bundle;
@@ -7,14 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.macmini2.triponyu.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Home1Fragment extends Fragment {
+public class PhoneVerifyFragment extends Fragment {
 
 
-    public Home1Fragment() {
+    public PhoneVerifyFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +24,7 @@ public class Home1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home1, container, false);
+        return inflater.inflate(R.layout.fragment_phone_verify, container, false);
     }
 
 }

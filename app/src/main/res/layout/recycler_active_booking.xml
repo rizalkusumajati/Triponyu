@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_marginBottom="5dp"
     android:layout_marginTop="5dp"
-    android:background="@android:color/white"
-    android:layout_height="wrap_content">
+
+    android:orientation="horizontal"
+
+    android:layout_height="50dp">
 
     <ImageView
         android:layout_marginLeft="10dp"
@@ -12,11 +14,13 @@
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
         android:id="@+id/icon_book"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/my_booking"/>
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
 
     <LinearLayout
+        android:layout_weight="1"
         android:id="@+id/detail"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/icon_book"
@@ -34,16 +38,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1 Sept 2016"/>
-        <TextView
-            android:padding="5dp"
-            android:layout_below="@id/time_pick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Have a nice trip"
-            android:background="#3ae23d"
-            android:textColor="@android:color/white"/>
+
     </LinearLayout>
 
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_below="@id/time_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have a nice trip"
+        android:background="@color/blue"
+        android:textColor="@android:color/white"/>
 
-
-</RelativeLayout>
+</LinearLayout>

@@ -6,8 +6,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.example.macmini2.triponyu.HistoryBookingFragment;
-import com.example.macmini2.triponyu.YourTripFragment;
+import com.example.macmini2.triponyu.bookingManagement.YourTripFragment;
 
 /**
  * Created by macmini2 on 9/22/16.

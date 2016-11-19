@@ -5,10 +5,104 @@
     tools:context="com.example.macmini2.triponyu.ExcludeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Exclude Fragment" />
+        android:id="@+id/isiexclude"
+        android:hint="Exclude"
+        android:layout_marginTop="10sp"
+
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_below="@+id/isiexclude"
+        android:textColor="@android:color/white"
+        android:background="@color/orange"
+        android:id="@+id/tombolexclude"
+        />
+
+
+
+    <ScrollView
+        android:layout_below="@+id/tombolexclude"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snack"
+
+                android:textSize="20sp"
+                android:id="@+id/kataexclude"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapusexclude"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/kataexclude"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garisex"
+                android:layout_below="@+id/kataexclude"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Consert and beer"
+                android:layout_below="@+id/garisex"
+                android:textSize="20sp"
+                android:id="@+id/kataexclude2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hapusex"
+                android:textSize="20sp"
+                android:text="X"
+                android:layout_alignTop="@+id/kataexclude2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+            <View
+                android:id="@+id/garisex2"
+                android:layout_below="@+id/kataexclude2"
+                android:layout_marginTop="10sp"
+                android:background="#5555"
+                android:layout_width = "match_parent"
+                android:layout_height="1dp"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
 
 </RelativeLayout>

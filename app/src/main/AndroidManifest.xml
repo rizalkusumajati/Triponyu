@@ -3,6 +3,7 @@
     package="com.example.macmini2.triponyu">
 
     <application
+        android:name=".TriponyuApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".OpeningActivity"/>
+        <activity android:name=".createAccount.CreateAccountActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".opening.OpeningActivity"/>
         <activity
             android:name=".IndexActivity"
             android:label="@string/title_activity_index"

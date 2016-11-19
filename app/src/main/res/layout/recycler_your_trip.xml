@@ -6,20 +6,13 @@
     android:background="@android:color/white"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_marginLeft="10dp"
-        android:layout_alignParentLeft="true"
-        android:layout_centerInParent="true"
-        android:id="@+id/icon_book"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/my_booking"/>
+
 
     <LinearLayout
         android:id="@+id/detail"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/icon_book"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">

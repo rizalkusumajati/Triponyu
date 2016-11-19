@@ -1,13 +1,84 @@
 <resources>
-    <string name="app_name">Triponyu</string>
-    <string name="opening">\"Feel the local experience\"</string>
+    <string name="app_name">Triponyu App</string>
+    <string name="opening">Local Trip At Your Fingertips</string>
     <string name="title_activity_index">IndexActivity</string>
+    <string name="text_login">New Tripper? Register here</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="done">Done</string>
+    <string name="insertCode">Insert code here</string>
+    <string name="insertId">Insert Id here</string>
+    <string name="insertBank">Insert Bank Account here</string>
+    <string name="requestTrip">Request Trip</string>
+    <string name="resend_code">Resend code</string>
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_name">Nama lengkap</string>
+    <string name="prompt_alamat">Alamat</string>
+    <string name="prompt_nomor">Nomor Handphone</string>
+    <string name="prompt_nama_perusahaan">Nama Perusahaan</string>
+    <string name="prompt_repeat_password">Repeat Password</string>
+    <string name="promp_search_trip">Search Trip</string>
+    <string name="prompt_describe">Describe Yourself</string>
+    <string name="prompt_person">How many person</string>
+    <string name="prompt_destinationPlan">Destination Plan</string>
+    <string name="create_account">Create An Account</string>
+    <string name="already_tripper">Already Tripper? Login here</string>
+    <string name="daftar">Daftar</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+     <string name="itil">
+        Meet up at our meeting point
+
+- BTS Station (Any Station, Wongwian Yai)
+
+- Hotel Pickup (Hotel Pickup in Bangkok Area)
+
+- Airport (Suvarnabhumi Airport)
+
+- MRT Station (Any Station)
+
+- Airport Rail Link Station (Any Station)
+    </string>
+    <string name="itil2">Depart to the floating market by a local boat.</string>
+    <string name="aktifitas2">Adventure , culiner</string>
+    //icon fontganteng//
+    <string name="cintah">&#xf004;</string>
+    <string name="jam">&#xf017;</string>
+    <string name="mobil">&#xf1b9;</string>
+    <string name="bahasa">&#xf0e6;</string>
+    <string name="aktifitas">&#xf29d; Actifities :</string>
+    <string name="trans">&#xf1b9; Transportation :</string>
+    <string name="max">&#xf0c0; Max Person :</string>
+    <string name="centang">&#xf05d;</string>
+    <string name="verifphone">&#xf10b;</string>
+    <string name="verifktp">&#xf09d;</string>
+    <string name="verifbank">&#xf19c;</string>
+    <string name="email">&#xf0e0;</string>
+    <string name="sms">&#xf086;</string>
+    <string name="camera">&#xf030;</string>
+    <string name="edit">&#xf044;</string>
+    <string name="close">&#xf00d;</string>
+    <string name="send">&#xf1d9;</string>
+    <string name="include">Ticket \n breakfast</string>
+    <string name="exlcude">Women \n Rooms</string>
+    <string name="desc">Have a touch of the good old Bangkok at the Civilian Monastery, enjoy the local floating market, and get excited in the very famous night life. You can sense all of those great life experiences in just a day!</string>
+
 </resources>

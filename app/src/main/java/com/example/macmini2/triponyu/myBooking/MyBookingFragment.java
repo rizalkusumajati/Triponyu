@@ -1,4 +1,4 @@
-package com.example.macmini2.triponyu;
+package com.example.macmini2.triponyu.myBooking;
 
 
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.macmini2.triponyu.IndexActivity;
+import com.example.macmini2.triponyu.R;
 
 
 /**

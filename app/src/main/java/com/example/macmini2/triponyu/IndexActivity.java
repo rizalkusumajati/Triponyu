@@ -1,11 +1,8 @@
 package com.example.macmini2.triponyu;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
 import android.view.KeyEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -19,13 +16,15 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.macmini2.triponyu.adapter.BookingManagementAdapter;
-import com.example.macmini2.triponyu.adapter.DepositAdapter;
-import com.example.macmini2.triponyu.adapter.MyMessageAdapter;
-import com.example.macmini2.triponyu.customDialog.BankAccount;
+import com.example.macmini2.triponyu.bookingManagement.BookingManagementMenuFragment;
 import com.example.macmini2.triponyu.customDialog.Deposit;
-import com.example.macmini2.triponyu.customDialog.Pin;
-import com.example.macmini2.triponyu.customDialog.Search;
+import com.example.macmini2.triponyu.deposit.DepositFragment;
+import com.example.macmini2.triponyu.home.RecyclerViewFragment;
+import com.example.macmini2.triponyu.message.MyMessageFragment;
+import com.example.macmini2.triponyu.myBooking.MyBookingMenuFragment;
+import com.example.macmini2.triponyu.profile.ProfileFragment;
+import com.example.macmini2.triponyu.requestTrip.RequestTripFragment;
+import com.example.macmini2.triponyu.search.SearchFragment;
 
 public class IndexActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -44,6 +43,8 @@ public class IndexActivity extends AppCompatActivity
     private Step1AddNewTripFragment step1AddNewTripFragment;
     private Step2AddNewTripFragment step2AddNewTripFragment;
     private IncludeExcludeFragment includeExcludeFragment;
+    private SearchFragment searchFragment;
+    private RequestTripFragment requsetTripFragment;
     public int fragmentIndex=0;
     private DrawerLayout drawer;
     private    ActionBarDrawerToggle toggle;
@@ -63,12 +64,15 @@ public class IndexActivity extends AppCompatActivity
         step1AddNewTripFragment=new Step1AddNewTripFragment();
         step2AddNewTripFragment=new Step2AddNewTripFragment();
         includeExcludeFragment=new IncludeExcludeFragment();
+        searchFragment=new SearchFragment();
+        requsetTripFragment=new RequestTripFragment();
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Search().show(getSupportFragmentManager(), null);
+                gotoSearch();
+               // new Search().show(getSupportFragmentManager(), null);
             }
         });
 
@@ -91,7 +95,16 @@ public class IndexActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            int fragments = getSupportFragmentManager().getBackStackEntryCount();
+            if (fragments == 1) {
+                finish();
+            } else {
+                if (getFragmentManager().getBackStackEntryCount() > 1) {
+                    getFragmentManager().popBackStack();
+                } else {
+                    super.onBackPressed();
+                }
+            }
         }
     }
 
@@ -143,6 +156,9 @@ public class IndexActivity extends AppCompatActivity
         } else if (id == R.id.nav_deposit) {
             gotoDeposit();
 
+        } else if (id == R.id.nav_requestTrip) {
+            gotoRequestTrip();
+
         } else if (id == R.id.nav_contact) {
             gotoContactUs();
         } else if (id == R.id.nav_help) {
@@ -157,6 +173,14 @@ public class IndexActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void gotoRequestTrip() {
+        getSupportFragmentManager().beginTransaction()
+
+                .replace(R.id.frame, requsetTripFragment)
+                .addToBackStack(null)
+                .commit();
     }
 
     public void setFabVisible(){
@@ -200,10 +224,11 @@ public class IndexActivity extends AppCompatActivity
         new Deposit().show(getSupportFragmentManager(), null);
     }
     public void backShow(){
-        toggle.setDrawerIndicatorEnabled(false);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.arrow);
+       // toggle.setDrawerIndicatorEnabled(false);
+       // getSupportActionBar().setHomeAsUpIndicator(R.drawable.arrow);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
     }
 
     public void backMyBooking(){
@@ -212,6 +237,17 @@ public class IndexActivity extends AppCompatActivity
             public void onClick(View view) {
                 hamburgerShow();
                 gotoMyBooking();
+
+            }
+        });
+    }
+
+    public void backMyMessage(){
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hamburgerShow();
+                gotoMyMessage();
 
             }
         });
@@ -272,16 +308,7 @@ public class IndexActivity extends AppCompatActivity
         });
     }
 
-    public void backMyMessage(){
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                hamburgerShow();
-                gotoMyMessage();
 
-            }
-        });
-    }
 
 
 
@@ -303,6 +330,14 @@ public class IndexActivity extends AppCompatActivity
 
     }
 
+    public void gotoSearch(){
+        getSupportFragmentManager().beginTransaction()
+
+                .replace(R.id.frame, searchFragment)
+                .addToBackStack(null)
+                .commit();
+
+    }
     public void gotoStep2(){
         getSupportFragmentManager().beginTransaction()
 

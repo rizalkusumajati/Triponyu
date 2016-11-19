@@ -7,7 +7,7 @@
     android:layout_marginTop="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.macmini2.triponyu.MyBookingFragment">
+    tools:context="com.example.macmini2.triponyu.myBooking.MyBookingFragment">
 
 
             <RelativeLayout

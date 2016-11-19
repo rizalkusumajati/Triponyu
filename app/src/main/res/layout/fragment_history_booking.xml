@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.macmini2.triponyu.HistoryBookingFragment">
+    tools:context="com.example.macmini2.triponyu.myBooking.HistoryBookingFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view"

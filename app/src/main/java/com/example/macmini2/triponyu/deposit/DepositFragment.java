@@ -1,4 +1,4 @@
-package com.example.macmini2.triponyu;
+package com.example.macmini2.triponyu.deposit;
 
 
 import android.os.Bundle;
@@ -9,9 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.macmini2.triponyu.adapter.ActiveBookingAdapter;
+import com.example.macmini2.triponyu.IndexActivity;
+import com.example.macmini2.triponyu.R;
+import com.example.macmini2.triponyu.adapter.BookingManagementAdapter;
+import com.example.macmini2.triponyu.adapter.DepositAdapter;
+import com.example.macmini2.triponyu.customDialog.Deposit;
+import com.example.macmini2.triponyu.customDialog.Pin;
 import com.example.macmini2.triponyu.recyclerComponent.DividerItemDecoration;
-import com.example.macmini2.triponyu.recyclerComponent.RecyclerTouchListener;
+import com.example.macmini2.triponyu.recyclerComponent.RecyclerTouchListenerDeposit;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,19 +25,21 @@ import java.util.HashMap;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ActiveBookingFragment extends Fragment {
+public class DepositFragment extends Fragment {
     final public String KEY_KOTA = "kota";
     final public String KEY_TANGGAL = "tangggal";
+    final public String KEY_JUMLAH = "jumlah";
+    final public String KEY_CONFIRM = "confirm";
     private ArrayList<HashMap<String, String>> dataset;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private LihatBookingFragment lihatBookingFragment;
     private String[] kota=new String[]{"Solo, Central Java","Solo, Central Java","Solo, Central Java","Solo, Central Java","Solo, Central Java"};
     private String[] tanggal=new String[]{"16 Sept 2016","16 Sept 2016","16 Sept 2016","16 Sept 2016","16 Sept 2016"};
+    private String[] jumlah=new String[]{"Rp 1.000.000","Rp 1.000.000","Rp 1.000.000","Rp 1.000.000","Rp 1.000.000"};
+    private String[] konfirm=new String[]{"confirm","need","confirm","need","confirm"};
 
-
-    public ActiveBookingFragment() {
+    public DepositFragment() {
         // Required empty public constructor
     }
 
@@ -40,34 +47,28 @@ public class ActiveBookingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_active_booking, container, false);
+        View view=inflater.inflate(R.layout.fragment_deposit, container, false);
+        ((IndexActivity)getActivity()).fragmentIndex=1;
+        ((IndexActivity)getActivity()).setToolbarTitle("Deposit");
+        ((IndexActivity)getActivity()).setFabInvisible();
+
         dataset = new ArrayList<HashMap<String, String>>();
         mRecyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view);
-        lihatBookingFragment=new LihatBookingFragment();
+
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         setupData();
 
-        mAdapter=new ActiveBookingAdapter(dataset);
+        mAdapter=new DepositAdapter(dataset,getContext());
         mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(),LinearLayoutManager.VERTICAL));
         mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new ClickListener() {
-            @Override
-            public void onClick(View view, int position) {
-                gotoLihatBooking();
-            }
-
-            @Override
-            public void onLongClick(View view, int position) {
-
-            }
-        }));
 
         // Inflate the layout for this fragment
         return view;
     }
+
     public void setupData(){
         int i =0;
         for (String kota_sat:kota) {
@@ -75,7 +76,8 @@ public class ActiveBookingFragment extends Fragment {
 
             map.put(KEY_KOTA, kota_sat);
             map.put(KEY_TANGGAL, tanggal[i]);
-
+            map.put(KEY_JUMLAH, jumlah[i]);
+            map.put(KEY_CONFIRM,konfirm[i] );
             i++;
 
             dataset.add(map);
@@ -90,11 +92,4 @@ public class ActiveBookingFragment extends Fragment {
         void onLongClick(View view, int position);
     }
 
-    private void gotoLihatBooking(){
-        getActivity().getSupportFragmentManager().beginTransaction()
-
-                .replace(R.id.frame, lihatBookingFragment)
-                .addToBackStack(null)
-                .commit();
-    }
 }

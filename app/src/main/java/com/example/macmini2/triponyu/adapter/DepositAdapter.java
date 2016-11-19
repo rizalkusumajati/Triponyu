@@ -8,11 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.macmini2.triponyu.DepositFragment;
 import com.example.macmini2.triponyu.IndexActivity;
 import com.example.macmini2.triponyu.R;
-import com.example.macmini2.triponyu.customDialog.Deposit;
-import com.example.macmini2.triponyu.customDialog.Pin;
 
 import java.util.ArrayList;
 import java.util.HashMap;
